@@ -20,12 +20,12 @@ int main() {
      //child 1
      p1 = fork();
      if (p1 == 0) {
-         
-         
-         
-         
-         
-         
+         int found = 255;
+         for(int i=0; i<15; i++){
+             if(arr[i] == key1){
+                 
+             }    
+         }     
      }
      //Parent waits for Child 1
      waitpid(p2, &status, 0);
@@ -35,12 +35,11 @@ int main() {
      //Child 2
      p2 = fork();
      if (p2 == 15) {
-         
-     
-     
-     
-     
-     
+         int found = 255;
+        for(int i=15; i<30; i++){
+            if(arr[i] == key2){
+            }
+        }
      }
      
      //Parent waits for Child 2
